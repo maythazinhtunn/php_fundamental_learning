@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			//Creating Objects
+			let cat = {}; //Object Literal Operator
+			let cat1 = { color: "Yellow", legs: 4 }; //object with 2 property
+			let catobj = {
+				color: "Yellow",
+				name: "Shwe War",
+				legs: 4, //trailing comma
+			};
+			console.log(catobj.color); //yellow
+			console.log(catobj["color"]); //yellow
+
+			//add and change property
+			let bird = { color: "Green", legs: 2 };
+			bird.name = "Shwe Gal";
+			bird["color"] = "Blue";
+			console.log(bird);
+
+			//object spread and destructing
+
+			let user = { name: "Bob", age: 22 };
+
+			function greet({ name, age }) {
+				return `Hello ${name}, you are ${age} years old`;
+			}
+			console.log(greet(user)); // Hello Bob, you are 22 years old
+			let { name, age } = user;
+			// name → Bob
+			// age → 22
+
+			//Object Method
+			let userObjMethod = {
+				name: "Bob",
+				hello: function () {
+					return `Hello, I'm ${this.name}`;
+				},
+			};
+			userObjMethod.name;
+			//userObjMethod[name] = Alice;error is not defined
+			userObjMethod.hello();
+			// Bob
+			// Hello, I'm Alice
+
+			//other way
+			let userObjMethod1 = {
+				name: "May",
+				hello() {
+					return `Hello, I'm ${this.name}`;
+				},
+			};
+
+			//Property Shorthand
+			let nameps = "Alice";
+			let ageps = 22;
+			let userps = { name, age };
+
+			//object array
+			let person = {
+				name: "Bob",
+				age: 22,
+				education: ["B.Sc.", "MBA"],
+			};
+
+			let people = [
+				{ name: "Alice", age: 21, gender: "Female" },
+				{ name: "Bob", age: 22, gender: "Male" },
+				{ name: "Zack", age: 24, gender: "Male" },
+			];
+
+			people.map((p) => p.name); // [ "Alice", "Bob", … , "Zack" ]
+
+			people.filter((p) => p.gender === "Male");
+			/* [{name: "Bob", age: 22, gender: "Male" },
+			… ,
+			{name: "Zack", age: 24, gender: "Female" }] */
+		</script>
+	</body>
+</html>

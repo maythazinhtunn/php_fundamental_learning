@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			//
+			//JavaScript Object Notation(JSON)
+
+			//change javascript to json string
+			let person = { name: "Alice", age: 21 };
+
+			console.log(JSON.stringify(person));
+			// { "name": "Alice", "age": 21 }
+
+			//change json to javascript
+			let json = '{ "name": "Alice", "age": 21 }';
+
+			console.log(JSON.parse(json));
+			// Object → { name: "Alice", age: 21 }
+		</script>
+	</body>
+</html>

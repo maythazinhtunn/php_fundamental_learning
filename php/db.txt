@@ -1,0 +1,18 @@
+//Hierarchical
+//Netwrok DBMS
+//Relational DBM ,MySQL,Oracle
+//Object Oriented Relation DBMS,object type
+//mongo db,postgre
+
+//programming=>database programming language
+//sql programming language(strucutral query language)
+
+//Oracle
+//MySQL
+
+//unsigned don't accept negative integer
+
+//inner join => return the exact same result
+//left join => return all data from left table
+//right join  => return all data from right table
+//full outer join => return all data from both side

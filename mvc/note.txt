@@ -1,0 +1,15 @@
+MVC
+
+
+View
+-UI logic
+Model
+-data logic
+Controller
+-application logic
+
+application logic complex
+-readability
+-robust
+-low complexity
+-can focus on specific logic code

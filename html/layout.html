@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css"">
+    
+</head>
+<style>
+    .grid-wrap div{
+        border-radius: 5px;
+        background-color: rgb(85, 86, 151);
+    }
+    .grid-wrap{
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px 50px;
+    }
+   .flex-wrap div{
+        border-radius: 5px;
+        background-color: rgb(168, 87, 148);
+        flex: 1;
+    }
+   .flex-wrap{
+       display: flex;
+    }
+</style>
+
+<body>
+    <div class="grid-wrap">
+        <div class="items1">One</div>
+        <div class="items1">Two</div>
+        <div class="items1">Three</div>
+        <div class="items1">Four</div>
+        <div class="items1">Five</div>
+        <div class="items1">Five</div>
+    </div>
+
+    <div class="flex-wrap">
+        <div class="flexitems1">One</div>
+        <div class="flexitems1">Two</div>
+        <div class="flexitems1">Three</div>
+        <div class="flexitems1">Four</div>
+    </div>
+</body>
+</html>
